@@ -3,3 +3,11 @@ rvm:
   - 2.3.3
 notifications:
   email: false
+addons:
+  code_climate:
+    repo_token:
+      secure: "QQx5BcMsSsTS+bk6aPwlPKKOyANM0xjUGGLEL7kPOKWA8kKAspMSX0AgR0jZbwqYO3jDNu0ZZJzh2vPAuHyf0btZ8ubNYEdJQ22ajKyh0XVREdBUGP9u4Jg5e5vnFwu4OOyeehlb/+wx2US7n3NBmSaWYEsKyNPzC81VVQwZfKR25MDN0NFgnTNcPwEY4dB0Mh3PIvBSqPVdoZMWwFh04N7srAtbU8XjzFhxdMHqMqnzWXoxYtiMhPnuRk2blqwK8ZYbpnl9EiNbz1J8nwF/vhtWc8u9xLLFLZbNYuhB2JYWTb7cbzSnCHwwbsu2940CA8DntpxpSR/7tSgIr6GOR2qwaIP+/ly6OLAv77x+xQiIv++rIo/5Ajwcu734pSgeMTvDRmVvATACO7YcCA8PEvKa9bx/4U0+xA/YVYx6XsBYNjkzn/0v9XHV0FcDagIX4E5ZcuWOhNyubU33851+Go+0w44bdBP8TKcDd4hH8H/lrqmeiPZPxfZJBCof6i5XbIeBIFKmIdiRTDoStNCZIX7/4i/neJ/rUkmKM7YybbF6mYWsqq+0QU4+k8ywwBz66IF+rTnDLh7WeI5hObKZeMbC4ArafgTYUKVcMfWAdGLKQDgjaUS0rbWbB3VdUskmmgU2EWXSygp7DHRBgeyJb3bo2mtNP7VdYdPsVHw494Y="
+script:
+  - bundle exec rake
+after_success:
+  - bundle exec codeclimate-test-reporter

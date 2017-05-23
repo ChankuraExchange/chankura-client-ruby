@@ -1,5 +1,9 @@
 # Ruby client for Chankura Exchange API
 
+[![Build Status](https://travis-ci.org/ChankuraExchange/chankura-client-ruby.svg?branch=master)](https://travis-ci.org/ChankuraExchange/chankura-client-ruby)
+[![Code Climate](https://codeclimate.com/github/ChankuraExchange/chankura-client-ruby/badges/gpa.svg)](https://codeclimate.com/github/ChankuraExchange/chankura-client-ruby)
+[![Test Coverage](https://codeclimate.com/github/ChankuraExchange/chankura-client-ruby/badges/coverage.svg)](https://codeclimate.com/github/ChankuraExchange/chankura-client-ruby/coverage)
+
 `chankura-client-ruby` is a client for Chankura Exchange API, support all Chankura Exchange API functions like submit order, get tickers, etc. It's also a reference client implementation, where you can find how to authenticate private Chankura Exchange API.
 
 ### Requirements
