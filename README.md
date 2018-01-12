@@ -31,7 +31,7 @@ Use `#get` or `#post` to access API after you created a `ChankuraAPI::Client`:
 require 'chankura_client'
 
 # Client can be initialized not providing key and sercet, but this client can only access public APIs
-client_public = ChankuraAPI::Client.new endpoint: 'https://trading.chanura.com'
+client_public = ChankuraAPI::Client.new endpoint: 'https://trading.chankura.com'
 
 # GET public api /api/v2/markets
 client_public.get_public '/api/v2/markets'
