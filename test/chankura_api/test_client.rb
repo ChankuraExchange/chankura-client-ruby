@@ -1,6 +1,11 @@
 require 'helper'
 
 class TestClient < Minitest::Test
+  def test_instantiation_without_keys
+    client = ChankuraAPI::Client.new
+    assert_equal client.class, ChankuraAPI::Client
+  end
+
   def test_access_private_apis_without_keys
     assert_raises ArgumentError do
       ChankuraAPI::Client.new.post ''

@@ -8,7 +8,7 @@ module ChankuraAPI
 
     def initialize(options={})
       options = options.symbolize_keys
-      setup_auth_keys options
+      setup_auth_keys options if options[:access_key] && options[:secret_key]
       @endpoint = options[:endpoint] || 'https://trading.chankura.com'
       @timeout  = options[:timeout]  || 60
     end
